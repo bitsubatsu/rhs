@@ -5,12 +5,12 @@ import PlantTest from '../containers/PlantTest'
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="ui container">
         <div className="App-header">
-          <h2>Welcome to RHS Plant Identification Tester</h2>
+          <h2>Plant Identification Tester</h2>
         </div>
         <p className="App-intro">
-          This will test you on plants
+          Try and provide the common and Latin names for these plants
         </p>
         <PlantTest />
       </div>
