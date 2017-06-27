@@ -32,7 +32,7 @@ class PlantTest extends Component {
 
   onNext = () => {
         this.setState({
-            currentQuestion : (this.state.currentQuestion + 1) %3
+            currentQuestion : (this.state.currentQuestion + 1) % this.state.questions.length
         });
     }
 
