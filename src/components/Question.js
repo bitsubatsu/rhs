@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Form, Button } from 'semantic-ui-react';
+import { Grid, Form, Button, Image } from 'semantic-ui-react';
 
 const styles = {
     root: {
@@ -9,11 +9,13 @@ const styles = {
 
 const Question = (props) => {
     return (
-        <Grid centred style={styles.root}>
+        <Grid centred columns={3} style={styles.root}>
             <Grid.Column centred width={5}>
             <h3>What is this plant?</h3>
-            <div><img src={props.imageUrl} alt="Whats this?" height="300" width="300" /></div>
-            <Form width='500'>
+            <Grid.Row height='500'>
+            <Image src={props.imageUrl} alt="Whats this?" size='large' shape='rounded' />
+            </Grid.Row>
+            <Form >
                 <Form.Group widths='equal'>
                     <Form.Input label='Common Name' placeholder={props.commonName} />
                 </Form.Group>

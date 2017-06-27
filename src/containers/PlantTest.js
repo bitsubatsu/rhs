@@ -19,6 +19,12 @@ class PlantTest extends Component {
                 imageUrl: 'https://www.planetherbs.com/images/hawthornfruit-2.jpg',
                 commonName: 'Hawthorn',
                 latinName: 'Cretageous Monogyna'
+                },
+                {            
+                id: 3,
+                imageUrl: 'https://apps.rhs.org.uk/plantselectorimages/detail/WSY0036711_5156.jpg',
+                commonName: 'Laurel',
+                latinName: 'Prunus laurocerasus'
                 }
             ]
     }
@@ -26,7 +32,7 @@ class PlantTest extends Component {
 
   onNext = () => {
         this.setState({
-            currentQuestion : (this.state.currentQuestion + 1) %2
+            currentQuestion : (this.state.currentQuestion + 1) %3
         });
     }
 
