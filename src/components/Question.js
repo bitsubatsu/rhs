@@ -1,5 +1,7 @@
 import React from 'react'
-import { Grid, Form, Button, Image } from 'semantic-ui-react';
+import { Grid, Form, Button } from 'semantic-ui-react';
+var Carousel = require('nuka-carousel');
+// var Carousel = require('react-responsive-carousel').Carousel;
 
 const styles = {
     root: {
@@ -9,11 +11,16 @@ const styles = {
 
 const Question = (props) => {
     return (
-        <Grid centred columns={3} style={styles.root}>
-            <Grid.Column centred width={5}>
+        <Grid columns={1} style={styles.root}>
+            <Grid.Column  width={5}>
             <h3>What is this plant?</h3>
             <Grid.Row height='500'>
-            <Image src={props.imageUrl} alt="Whats this?" size='large' shape='rounded' />
+                <Carousel width="800px">
+                    {props.imageUrl.map(function(url, i) {
+                            return (<img src={url} alt="Whats this?" />)
+                        })
+                    }
+                </Carousel>
             </Grid.Row>
             <Form >
                 <Form.Group widths='equal'>

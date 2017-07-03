@@ -1,14 +1,12 @@
 import * as ActionType from '../actions/questions/actionTypes';
-const MAX_QUESTIONS = 3;
 
 function getInitialState() {
 
     const data = require('../Questions');
 
-    //	Format or normnalise questions data here
+    //	Format or normalise questions data here
 
     const initialState = {
-
         questions: data.questions,
         current_question: 0
     };
@@ -21,11 +19,9 @@ function nextQuestion(state, action) {
     console.log('NEXT_QUESTION');
     const current = state.current_question;
     let next = current + 1;
-    if (next > MAX_QUESTIONS) {
+    if (next >= state.questions.length) {
         next = 0;
     }
-
-
 
     const result = {
         ...state,

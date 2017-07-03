@@ -3,19 +3,29 @@
     "questions": [
         {
             "id": 1,
-            "imageUrl": "https://www.ornamental-trees.co.uk/images/products/zoom/1336491398-44765300.jpg",
+            "imageUrl": [
+                "https://www.ornamental-trees.co.uk/images/products/zoom/1336491398-44765300.jpg",
+                "http://landscapia.ca/wp-content/uploads/2016/02/Buxus-sempervirens.jpg",
+                "https://a6adc47bb216dfe8a383-49bf67815854ec9e2c04a8f4abb9cbf5.ssl.cf3.rackcdn.com/images/products2/pl/20/00/02/55/pl2000025576_card_lg.jpg"
+            ],
             "commonName": "Box",
             "latinName": "Buxus Sempervirens"
         },
         {
             "id": 2,
-            "imageUrl": "https://www.planetherbs.com/images/hawthornfruit-2.jpg",
+            "imageUrl": [
+                "https://www.planetherbs.com/images/hawthornfruit-2.jpg",
+                "https://www.planetherbs.com/images/hawthornfruit-2.jpg"
+            ],
             "commonName": "Hawthorn",
             "latinName": "Cretageous Monogyna"
         },
         {
             "id": 3,
-            "imageUrl": "https://apps.rhs.org.uk/plantselectorimages/detail/WSY0036711_5156.jpg",
+            "imageUrl": [
+                "https://apps.rhs.org.uk/plantselectorimages/detail/WSY0036711_5156.jpg",
+                "https://apps.rhs.org.uk/plantselectorimages/detail/WSY0036711_5156.jpg"
+            ],
             "commonName": "Laurel",
             "latinName": "Prunus laurocerasus"
         }
